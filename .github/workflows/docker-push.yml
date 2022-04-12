@@ -38,7 +38,7 @@ jobs:
         id: prepare
         run: |
           echo ::set-output name=docker_platforms::linux/amd64
-          echo ::set-output name=docker_image::cysk003/duckdns
+          echo ::set-output name=docker_image::cysk003/ddns-duckdns
           echo ::set-output name=docker_tag::latest
           echo ::set-output name=docker_is_push::${PUSH:true}
 
