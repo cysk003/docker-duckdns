@@ -10,4 +10,4 @@ IPV4ADDR=$(curl -s ${URL_DETECT_IPV4})
 IPV6ADDR=$(curl -s ${URL_DETECT_IPV6})
 PASSWORDMD5=$(echo "$PASSWORD" | base64)
 RESPONSE=$(curl --silent "https://api.dynu.com/nic/update?username=$USERNAME&password=$PASSWORDMD5&hostname=$HOSTNAME&myip=$IPV4ADDR&myipv6=$IPV6ADDR")
-echo -e "$(date) ${RESPONSE}"
+echo -e "$(date) ${RESPONSE} $IPV4ADDR"
