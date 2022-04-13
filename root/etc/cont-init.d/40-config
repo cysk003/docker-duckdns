@@ -6,7 +6,7 @@ if [ -z "$USERNAME" ] || [ -z "$PASSWORD" ] || [ -z "$HOSTNAME" ]; then
   exit 1
 else
   echo "Retrieving subdomain and token from the environment variables"
-  echo -e "USERNAME=\"${USERNAME}\" PASSWORD=\"${PASSWORD}\" TOKEN=\"${TOKEN}\"" > /app/duck.conf
+  echo -e "USERNAME=\"${USERNAME}\" PASSWORD=\"${PASSWORD}\" HOSTNAME=\"${HOSTNAME}\"" > /app/duck.conf
 fi
 
 # modify crontab if logging to file
