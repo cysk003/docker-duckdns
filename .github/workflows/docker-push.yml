@@ -50,3 +50,4 @@ jobs:
           --tag "${{ steps.prepare.outputs.docker_image }}:latest" \
           --build-arg TAG=${{ steps.prepare.outputs.docker_tag }} \
           --file Dockerfile .
+#1
